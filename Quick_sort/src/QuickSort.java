@@ -67,29 +67,9 @@ public class QuickSort {
         quickSort(arr);
         long endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1_000_000.0; // переведемо наносекунди в мілісекунди
-        System.out.println("Час сортування з вибором опорного елемента напочатку: " + duration + " мілісекунд");
+        System.out.println("Час сортування: " + duration + " мілісекунд");
         printArray(arr);
 
-        // Повторне ініціалізування масиву для наступних експериментів
-        arr = new int[]{12, 11, 13, 5, 6, 7};
 
-        // Сортування з вибором опорного елемента вкінці
-        startTime = System.nanoTime();
-        quickSort(arr);
-        endTime = System.nanoTime();
-        duration = (endTime - startTime) / 1_000_000.0;
-        System.out.println("Час сортування з вибором опорного елемента вкінці: " + duration + " мілісекунд");
-        printArray(arr);
-
-        // Повторне ініціалізування масиву для наступних експериментів
-        arr = new int[]{12, 11, 13, 5, 6, 7};
-
-        // Сортування з вибором випадкового опорного елемента
-        startTime = System.nanoTime();
-        quickSort(arr);
-        endTime = System.nanoTime();
-        duration = (endTime - startTime) / 1_000_000.0;
-        System.out.println("Час сортування з вибором випадкового опорного елемента: " + duration + " мілісекунд");
-        printArray(arr);
     }
 }
